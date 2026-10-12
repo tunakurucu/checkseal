@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "checkseal"
+version = "0.1.0"
+description = "Do those passing tests still apply to this code? Local check receipts with Git content fingerprints."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Tuna Kurucu"}]
+dependencies = []
+keywords = ["testing", "git", "ai-agents", "developer-tools", "verification"]
+classifiers = ["Development Status :: 3 - Alpha", "Environment :: Console", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3", "Topic :: Software Development :: Testing"]
+
+[project.scripts]
+checkseal = "checkseal:main"
+
+[project.urls]
+Homepage = "https://github.com/tunakurucu/checkseal"
+Issues = "https://github.com/tunakurucu/checkseal/issues"
+
+[tool.setuptools]
+py-modules = ["checkseal"]
